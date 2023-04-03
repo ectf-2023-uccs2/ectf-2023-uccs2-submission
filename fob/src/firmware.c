@@ -135,6 +135,7 @@ int main(void)
   if (fob_state_flash->paired == FLASH_UNPAIRED)
   {
     strcpy((char *)(fob_state_ram.pair_info.password), PASSWORD);
+    strcpy((char *)(fob_state_ram.pair_info.salt), SALT);
     strcpy((char *)(fob_state_ram.pair_info.pin), PAIR_PIN);
     strcpy((char *)(fob_state_ram.pair_info.car_id), CAR_ID);
     strcpy((char *)(fob_state_ram.feature_info.car_id), CAR_ID);
